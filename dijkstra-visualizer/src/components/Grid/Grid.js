@@ -6,7 +6,6 @@ const Grid = ({ rows, columns }) => {
   const [grid, setGrid] = useState([]);
   const [start, setStart] = useState({ row: 10, col: 5 });
   const [end, setEnd] = useState({ row: 12, col: 20 });
-  const [path, setPath] = useState([]);
 
   useEffect(() => {
     const initialGrid = initializeGrid(rows, columns, start, end);
